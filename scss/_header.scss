@@ -1,0 +1,188 @@
+.header {
+    padding-top: 10px;
+    padding-bottom: 44px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &__container {
+    }
+
+    &__body {
+        position: relative;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 1920px;
+        height: 92px;
+        background: url('../source/header.png') center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__logo {
+        position: absolute;
+        width: 226px;
+        height: 239px;
+        background: url('../source/logo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        top: 23px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            transform: translateX(-50%) rotate(5deg) scale(1.05);
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__slang {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25.6px;
+        margin-right: 30px;
+        font-family: $font-mont;
+        color: #333;
+    }
+
+    &__social-wrapper {
+        display: flex;
+    }
+
+    &__social {
+        position: relative;
+        z-index: 1;
+        width: 50px;
+        height: 51px;
+        transition: .3s ease;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-10px);
+        }
+        &:nth-child(1) {
+            background: url('../source/insta.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url('../source/whatsapp.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__auth {
+        display: flex;
+        margin-right: 46px;
+        align-items: center;
+    }
+
+    &__auth-icon {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+
+    &__auth-btn {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 24.29px;
+        cursor: pointer;
+    }
+
+    &__phone {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        text-decoration-line: underline;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    &__cart-btn {
+        width: 98px;
+        height: 64px;
+        background: url('../source/cart-btn.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        transition: .3s ease;
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    &__cart-btn-icon {
+        font-size: 22px;
+        margin-right: 5px;
+    }
+
+    &__cart-btn-num {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.71px;
+    }
+
+    &__navigation {
+        display: flex;
+        z-index: 1;
+        position: relative;
+        li {
+            margin-right: 18px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22.86px;
+                color: #000;
+                position: relative;
+                cursor: pointer;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    height: 1px;
+                    background: #000;
+                    bottom: 0;
+                    right: 0;
+                    transition: .3s ease;
+                }
+                &:hover::before {
+                    width: 100%;
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

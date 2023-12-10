@@ -1,0 +1,143 @@
+.comments {
+
+    &__container {
+        position: relative;
+    }
+
+    &__body {
+        margin-top: $m;
+        margin-bottom: $m;
+    }
+
+    &__heading {
+        position: relative;
+        margin-bottom: 60px;
+        z-index: 1;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 950px;
+    }
+
+    &__item-wrapper {
+        max-width: 950px;
+        max-height: 504px;
+    }
+
+    &__item {
+        width: 950px;
+        height: 504px;
+        background: url('../source/comments-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        padding: 65px;
+        z-index: 1;
+        position: relative;
+    }
+
+    &__item-head {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-head-avatar {
+        width: 96px;
+        height: 96px;
+        background: url('../source/comment-01.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 15px;
+    }
+
+    &__item-head-info {
+    }
+
+    &__item-head-info-name {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+
+    &__item-head-info-date {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    &__item-content {
+    }
+
+    &__item-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+        max-width: 517px;
+    }
+
+    &__item-image {
+        width: 300px;
+        height: 371px;
+        background: url('../source/comment-image.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__el-01 {
+        position: absolute;
+        width: 300px;
+        height: 237px;
+        background: url('../source/parsley.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: -90px;
+        left: -180px;
+    }
+
+    &__el-02 {
+        position: absolute;
+        bottom: -15px;
+        right: -140px;
+        width: 300px;
+        height: 128px;
+        background: url('../source/patern-01.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__arrow-prev {
+        width: 160px;
+        height: 160px;
+        background: url('../source/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: -100px;
+        top: 60%;
+        transform: translateY(-60%);
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+    &__arrow-next {
+        width: 160px;
+        height: 160px;
+        background: url('../source/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: -100px;
+        top: 60%;
+        transform: translateY(-60%) rotate(180deg);
+        cursor: pointer;
+        transition: .3s ease;
+    }
+    .swiper-button-disabled {
+        opacity: .6;
+    }
+}

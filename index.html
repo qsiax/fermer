@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="source/logo.png" type="image/png">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Фермер Латышев</title>
+</head>
+<body>
+
+    <div class="overlay third"></div>
+	<div class="overlay second"></div>
+	<div class="overlay firts"></div>
+	<div class="overlay four"></div>
+	<div class="overlay five"></div>
+	<div class="overlay six"></div>
+
+    <div class="header__logo"></div>
+    <header class="header">
+        <div class="header__bg"></div>
+        <div class="header__container _container">
+            <div class="header__body">
+                <div class="header__wrapper">
+                    <div class="header__block">
+                        <div class="header__slang">ЗА КАЧЕСТВО - РУЧАЮСЬ!</div>
+                        <div class="header__social-wrapper">
+                            <a href="https://www.instagram.com/fermer_latyshev_ykt/" target="_blank" class="header__social"></a>
+                            <a href="https://api.whatsapp.com/send/?phone=79142701252&text&type=phone_number&app_absent=0" target="_blank" class="header__social"></a>
+                        </div>
+                    </div>
+                    <div class="header__block">
+                        <div class="header__auth">
+                            <div class="header__auth-icon _icon-profile"></div>
+                            <div class="header__auth-btn">Войти в аккаунт</div>
+                        </div>
+                        <div class="header__phone">8 914 270 1252</div>
+                        <div class="header__cart-btn">
+                            <div class="header__cart-btn-icon _icon-cart"></div>
+                            <div class="header__cart-btn-num">(<span id="cart-num">0</span>)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__wrapper">
+                    <ul class="header__navigation">
+                        <li><a href="#product">КАТАЛОГ</a></li>
+                        <li><a href="#product">ПОПУЛЯРНОЕ СЕГОДНЯ</a></li>
+                        <li><a href="#sale">АКЦИЯ!</a></li>
+                    </ul>
+                    <ul class="header__navigation">
+                        <li><a href="#company">О КОМПАНИИ</a></li>
+                        <li><a href="#video">УСЛОВИЯ ДОСТАВКИ</a></li>
+                        <li><a href="#footer">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home__container _container">
+            <div class="home__body">
+                <div class="home__content">
+                    <div class="home__heading">
+                        КАПУСТА В
+                        ПРОДАЖЕ
+                        ПО ШОК ЦЕНЕ
+                    </div>
+                    <div class="home__price">
+                        <span>50 РУБ.</span>
+                        <span>/КГ</span>
+                    </div>
+                    <a href="#product" class="home__btn btn">ОТКРЫТЬ КАТАЛОГ</a>
+                </div>
+                <div class="home__image-wrapper">
+                    <div class="home__image-01"></div>
+                    <div class="home__image-02"></div>
+                </div>
+            </div>
+            <div class="home__el-01">
+                ОВОЩИ
+                <div class="home__el-02"></div>
+                <div class="home__el-03"></div>
+            </div>
+            <div class="home__el-04"></div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="product__container _container">
+            <div class="product__body">
+                <div class="product__heading heading" id="product">ПОПУЛЯРНОЕ СЕГОДНЯ</div>
+                <div class="product__item-wrapper">
+                    <div class="product__item">
+                        <div class="product__item-bg"></div>
+                        <div class="product__item-img">
+                            <img src="source/product-01.png" alt="КАРТОШКА">
+                        </div>
+                        <div class="product__item-text">КРОШКА КАРТОШКА</div>
+                        <div class="product__item-price">45 РУБ</div>
+                        <div class="product__item-wt">ЗА 1 КГ</div>
+                        <div class="product__item-btn btn" onclick="cartActive()">В КОРЗИНУ</div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__item-bg"></div>
+                        <div class="product__item-img">
+                            <img src="source/product-02.png" alt="КАРТОШКА">
+                        </div>
+                        <div class="product__item-text">КАРТОФЕЛЬ СОРТА "ГАЛА"</div>
+                        <div class="product__item-price">75 РУБ</div>
+                        <div class="product__item-wt">ЗА 1 КГ</div>
+                        <div class="product__item-btn btn" onclick="cartActive()">В КОРЗИНУ</div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__item-bg"></div>
+                        <div class="product__item-img">
+                            <img src="source/product-03.png" alt="КАРТОШКА">
+                        </div>
+                        <div class="product__item-text">КАПУСТА БЕЛОКОЧАННАЯ</div>
+                        <div class="product__item-price">50 РУБ</div>
+                        <div class="product__item-wt">ЗА 1 КГ</div>
+                        <div class="product__item-btn btn" onclick="cartActive()">В КОРЗИНУ</div>
+                    </div>
+                </div>
+                <div class="product__item-wrapper">
+                    <div class="product__item">
+                        <div class="product__item-bg"></div>
+                        <div class="product__item-img">
+                            <img src="source/product-04.png" alt="КАРТОШКА">
+                        </div>
+                        <div class="product__item-text">СВЕКЛА ДОМАШНЯЯ</div>
+                        <div class="product__item-price">45 РУБ</div>
+                        <div class="product__item-wt">ЗА 1 КГ</div>
+                        <div class="product__item-btn btn" onclick="cartActive()">В КОРЗИНУ</div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__item-bg"></div>
+                        <div class="product__item-img">
+                            <img src="source/product-05.png" alt="КАРТОШКА">
+                        </div>
+                        <div class="product__item-text">МОРКОВЬ ДОМАШНЯЯ</div>
+                        <div class="product__item-price">75 РУБ</div>
+                        <div class="product__item-wt">ЗА 1 КГ</div>
+                        <div class="product__item-btn btn" onclick="cartActive()">В КОРЗИНУ</div>
+                    </div>
+                    <div class="product__item">
+                    </div>
+                </div>
+            </div>
+            <div class="product__el-01"></div>
+            <div class="product__el-02"></div>
+            <div class="product__el-03"></div>
+        </div>
+    </section>
+
+    <div class="cart-success">
+        <div class="cart-success__popup">
+            <div class="cart-success__popup-icon"></div>
+            <div class="cart-success__popup-title">Добавлено в корзину!</div>
+            <div class="cart-success__popup-btn" onclick="cartClose()">ОК</div>
+        </div>
+    </div>
+
+    <section class="sale" id="sale">
+        <div class="sale__container _container">
+            <div class="sale__body">
+                <div class="sale__image"></div>
+                <div class="sale__content">
+                    <div class="sale__heading heading">АКЦИЯ ДНЯ!</div>
+                    <div class="sale__text">НАБОР "ДОМОХОЗЯЮШКА" СО СКИДКОЙ 20%</div>
+                    <div class="sale__price-wrapper">
+                        <div class="sale__price">1600 руб.</div>
+                        <div class="sale__price">
+                            <span>старая цена </span>
+                            <span>1920 руб</span>
+                        </div>
+                    </div>
+                    <div class="sale__btn btn" onclick="cartActive()">В КОРЗИНУ</div>
+                </div>
+            </div>
+            <div class="sale__el-01"></div>
+        </div>
+        <div class="sale__el-02"></div>
+    </section>
+
+    <section class="comments" id="comments">
+        <div class="comments__container _container">
+            <div class="comments__body">
+                <div class="comments__heading heading">ОТЗЫВЫ КЛИЕНТОВ</div>
+                <div class="comments__content swiper">
+                    <div class="comments__item-wrapper swiper-wrapper">
+                        <div class="comments__item swiper-slide">
+                            <div class="comments__item-content">
+                                <div class="comments__item-head">
+                                    <div class="comments__item-head-avatar"></div>
+                                    <div class="comments__item-head-info">
+                                        <div class="comments__item-head-info-name">ВАРЯ МАКСИМА</div>
+                                        <div class="comments__item-head-info-date">24 Ноября 2020</div>
+                                    </div>
+                                </div>
+                                <div class="comments__item-text">
+                                    Сейчас многие задаются вопросом: где купить хорошие овощи? 🤔 <br><br>
+                                    С тех пор, как, @svetlanna_taayko вышла замуж за @fermer_latyshev_ykt у меня больше таких вопросов не возникает 😅. В этом я убедилась, заказав картошку и набор для квашения капусты 😊. Картошечка такая, будто только с огорода выкопанная, а капуста выглядит как свежая и нежная красна девица 😍. Ну у меня просто нет других сравнений 😌. Самое классное то, что есть доставка и не надо возиться с кулями 🥬🥔
+                                </div>
+                            </div>
+                                <div class="comments__item-image"></div>
+                        </div>
+                        <div class="comments__item swiper-slide">
+                            <div class="comments__item-content">
+                                <div class="comments__item-head">
+                                    <div class="comments__item-head-avatar"></div>
+                                    <div class="comments__item-head-info">
+                                        <div class="comments__item-head-info-name">ВАРЯ МАКСИМА</div>
+                                        <div class="comments__item-head-info-date">24 Ноября 2020</div>
+                                    </div>
+                                </div>
+                                <div class="comments__item-text">
+                                    Сейчас многие задаются вопросом: где купить хорошие овощи? 🤔 <br><br>
+                                    С тех пор, как, @svetlanna_taayko вышла замуж за @fermer_latyshev_ykt у меня больше таких вопросов не возникает 😅. В этом я убедилась, заказав картошку и набор для квашения капусты 😊. Картошечка такая, будто только с огорода выкопанная, а капуста выглядит как свежая и нежная красна девица 😍. Ну у меня просто нет других сравнений 😌. Самое классное то, что есть доставка и не надо возиться с кулями 🥬🥔
+                                </div>
+                            </div>
+                                <div class="comments__item-image"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments__el-01"></div>
+                <div class="comments__el-02"></div>
+                <div class="comments__arrow-prev"></div>
+                <div class="comments__arrow-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="company" id="company">
+        <div class="company__container _container">
+            <div class="company__body">
+                <div class="company__heading heading">О КОМПАНИИ</div>
+                <div class="company__content">
+                    <div class="company__block">
+                        <div class="company__text">
+                            «Фермер Латышев» - торговая марка ИП К(Ф)Х Латышева Сергея Петровича, который занимается выращиванием картофеля и овощей, а также разведением крупного рогатого скота в Хангаласском улусе Республики Саха (Якутия). <br>
+                            Продукция «Фермер Латышев» - это экологически чистая, сертифицированная продукция, бережно хранящаяся в специальных условиях. <br>
+                            «Фермер Латышев» всегда открыт для ваших отзывов и предложений, которые вы можете отправить по тел.: 89142701252
+                        </div>
+                        <div class="company__btn btn">ЧИТАТЬ ПОДРОБНЕЕ</div>
+                    </div>
+                    <div class="company__item-wrapper">
+                        <div class="company__item"></div>
+                        <div class="company__item"></div>
+                        <div class="company__item"></div>
+                    </div>
+                </div>
+                <div class="company__el-01"></div>
+                <div class="company__el-02"></div>
+                <div class="company__el-03"></div>
+                <div class="company__el-04"></div>
+                <div class="company__el-05"></div>
+                <div class="company__el-06"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video" id="video">
+        <div class="video__container _container">
+            <div class="video__body">
+                <div class="video__top-heading sub">ПОСМОТРИТЕ</div>
+                <div class="video__heading heading">КОРОТКОЕ ВИДЕО</div>
+                <div class="video__under-heading sub">О ТОМ КАК МЫ РАБОТАЕМ</div>
+                <div class="video__content">
+                    <div class="video__play" id="play"></div>
+                </div>
+            </div>
+            <div class="video__el-01"></div>
+        </div>
+    </section>
+    
+    <div class="video-popup">
+        <div class="video-popup-yt">
+            <iframe width="600" height="315" id="yt" src="https://www.youtube.com/embed/-Ltpi0dLyPI?si=L5OfYkWtJnMBQFIp&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer__container _container">
+            <div class="footer__body">
+                <a href="#home" class="footer__logo"></a>
+                <div class="footer__block">
+                    <div class="footer__title">РЕКВИЗИТЫ</div>
+                    <ul class="footer__navigation">
+                        <li><a href="#">
+                            ООО "ЗАГОТОВИТЕЛЬНАЯ
+                            КОМПАНИЯ "АГРОАЛЬЯНС ЯКУТИЯ"
+                        </a></li>
+                        <li>ИНН 1435364220</li>
+                        <li>ОГРН 1211400011019</li>
+                        <li>Политика конфиденциальности</li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">КОНТАКТЫ</div>
+                    <div class="footer__contact-wrapper">
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon _icon-call"></div>
+                            8 914 270 1252
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact-icon _icon-location"></div>
+                             с.Пригородный,Озерная 18
+                            - пункт самовывоза
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">СОЦИАЛЬНЫЕ СЕТИ</div>
+                    <div class="footer__social-wrapper">
+                        <a href="https://www.instagram.com/fermer_latyshev_ykt/" target="_blank" class="footer__social"></a>
+                        <a href="https://api.whatsapp.com/send/?phone=79142701252&text&type=phone_number&app_absent=0" target="_blank" class="footer__social"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="js/preloader.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/slider.js"></script>
+</body>
+</html>

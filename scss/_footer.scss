@@ -1,0 +1,105 @@
+.footer {
+    background: #1C1F1D;
+    padding-bottom: 120px;
+    padding-top: 65px;
+    * {
+        color: $main-color;
+    }
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 180px;
+        height: 180px;
+        background: url('../source/logo-wh.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            transform: rotate(5deg) scale(1.05);
+        }
+    }
+
+    &__block {
+    }
+
+    &__title {
+        font-family: $font-mont;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 5px;
+    }
+
+    &__navigation {
+        max-width: 245px;
+        li {
+            margin-bottom: 5px;
+            &:last-child {
+                margin-bottom: 0;
+                margin-top: 20px;
+                a {
+                    font-size: 14px;
+                    text-decoration: underline;
+                }
+            }
+        }
+        li a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5999999999999999;
+        }
+    }
+
+    &__contact-wrapper {
+    }
+
+    &__contact {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5999999999999999;
+        margin-bottom: 5px;
+        max-width: 209px;
+        display: flex;
+        align-items: center;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__contact-icon {
+        font-size: 33px;
+    }
+
+    &__social-wrapper {
+        display: flex;
+    }
+
+    &__social {
+        width: 50px;
+        height: 51px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            transform: translateY(-10px);
+        }
+        &:nth-child(1) {
+            background: url('../source/insta.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 20px;
+        }
+        &:nth-child(2) {
+            background: url('../source/whatsapp.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

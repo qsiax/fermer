@@ -1,0 +1,128 @@
+.home {
+    background: url('../source/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 928.47px;
+    &__container {
+        position: relative;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 237px;
+    }
+
+    &__content {
+        max-width: 520px;
+        margin-top: 68px;
+    }
+
+    &__heading {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 70.4px; 
+        font-family: $font-mont;
+        margin-bottom: 19px;
+    }
+
+    &__price {
+        margin-bottom: 42px;
+        span:nth-child(1) {
+            font-size: 38.4px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 42.24px;
+            color: #EE1D24;
+        }
+        span:nth-child(2) {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 35.2px;
+        }
+    }
+
+    &__btn {
+        max-width: 260px;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 540px;
+        height: 548px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image-01 {
+        position: absolute;
+        width: 520px;
+        height: 548px;
+        background: url('../source/home-01.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__image-02 {
+        position: absolute;
+        width: 540px;
+        height: 462px;
+        background: url('../source/home-02.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    &__el-01 {
+        width: 380px;
+        height: 226px;
+        background: url('../source/home-el.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        bottom: -250px;
+        font-size: 32px;
+        font-family: $font-mont;
+        font-weight: 700;
+        color: rgb(163, 110, 64);
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+
+    &__el-02 {
+        width: 228px;
+        height: 196px;
+        background: url('../source/home-el-01.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: -100px;
+        z-index: -1;
+    }
+
+    &__el-03 {
+        width: 250px;
+        height: 224px;
+        background: url('../source/potato.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 10px;
+        bottom: -110px;
+    }
+
+    &__el-04 {
+        width: 110px;
+        height: 96px;
+        background: url('../source/home-el-02.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        bottom: -170px;
+    }
+}

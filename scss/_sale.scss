@@ -1,0 +1,98 @@
+.sale {
+    height: 560.11px;
+    background: url('../source/sale-bg.jpg') center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    &__container {
+        position: relative;
+    }
+
+    &__body {
+        position: relative;
+    }
+
+    &__image {
+        width: 640px;
+        height: 517px;
+        background: url('../source/sale.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: -70px;
+        bottom: -70%;
+    }
+
+    &__content {
+        max-width: 500px;
+        padding-top: 41px;
+        margin-left: auto;
+        margin-right: 60px;
+    }
+
+    &__heading {
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font-size: 32px;
+        line-height: 1.1;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    &__price-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__price {
+        font-size: 32px;
+        line-height: 1.1;
+        letter-spacing: 0em;
+        color: #333;
+        opacity: 1;
+        &:nth-child(1) {
+            margin-right: 35px;
+        }
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            color: #696969;
+            span:nth-child(1) {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            span:nth-child(2) {
+                text-decoration: line-through red;
+            }
+        }
+    }
+
+    &__btn {
+        max-width: 275px;
+    }
+
+    &__el-01 {
+        width: 280px;
+        height: 276px;
+        position: absolute;
+        top: -110px;
+        left: -180px;
+        background: url('../source/tomato.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__el-02 {
+        position: absolute;
+        top: -130px;
+        right: 0;
+        background: url('../source/foliage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 567px;
+        height: 572px;
+    }
+}

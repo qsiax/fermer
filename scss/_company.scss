@@ -1,0 +1,138 @@
+.company {
+
+    &__container {
+        position: relative;
+    }
+
+    &__body {
+        margin-bottom: $m;
+    }
+
+    &__heading {
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        max-width: 367px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 70px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__btn {
+        max-width: 260px;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 250px;
+        height: 417px;
+        margin-right: 10px;
+        position: relative;
+        z-index: 1;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:nth-child(1) {
+            background: url('../source/company-01.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url('../source/company-02.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url('../source/company-03.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__el-01 {
+        width: 347px;
+        height: 250px;
+        background: url('../source/patern-02.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: -215px;
+        top: -80px;
+        z-index: 1;
+    }
+
+    &__el-02 {
+        width: 230px;
+        height: 213px;
+        background: url('../source/tomato-02.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: -140px;
+        top: 100px;
+    }
+
+    &__el-03 {
+        width: 410px;
+        height: 255px;
+        background: url('../source/cabbage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 100px;
+        top: -100px;
+    }
+
+    &__el-04 {
+        width: 470px;
+        height: 422px;
+        background: url('../source/potato.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -140px;
+        top: -170px;
+    }
+
+    &__el-05 {
+        width: 390px;
+        height: 315px;
+        background: url('../source/onion.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 100px;
+        right: -300px;
+        z-index: 2;
+    }
+
+    &__el-06 {
+        width: 280px;
+        height: 119px;
+        background: url('../source/patern-03.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: -215px;
+        top: -80px;
+    }
+}
